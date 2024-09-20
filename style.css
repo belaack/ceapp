@@ -1,0 +1,83 @@
+/* Estilos gerais */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #e0e0e0; /* Fundo geral da página */
+}
+
+/* Estilo da barra lateral */
+.sidebar {
+    width: 180px;
+    height: 100vh;
+    background-color: #272D80;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilo do logo */
+.logo {
+    width: 120px; /* Ajuste do tamanho do logo */
+    margin-bottom: 0,09px;
+}
+
+.titulo {
+    color: #EDEDED;
+    text-align: center;
+    font-family: Inter;
+    font-size: 25px;
+    font-style: italic;
+    font-weight: 450;
+    line-height: normal;
+    padding-bottom: 65px;
+    padding-top: 0,1px;
+}
+
+/* Estilo dos itens do menu */
+.menu-item {
+    width: 118px;
+    height: 6px;       
+    margin: 10px 0;
+    text-align: center;
+    font-size: 13,4px; /* Ajuste do tamanho do texto */
+    border-radius: 3px;
+    background: #D9D9D9;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    color: #272D80;
+    font-family: Inter;
+    font-style: italic;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.menu-item:hover {
+    background-color: #B9BCCC;
+}
+
+/* Estilos dos botões */
+/* Estilizando os botões de submenu */
+button {
+    width: 150px; /* Largura desejada do botão */
+    height: auto; /* Altura automática para ajustar ao conteúdo */
+    padding: 10px; /* Espaçamento interno para melhor ajuste */
+    margin: 10px 0; /* Espaçamento externo entre os botões */
+    text-align: center; /* Centraliza o texto horizontalmente */
+    display: flex; /* Usar flexbox para facilitar a centralização */
+    align-items: center; /* Centraliza o texto verticalmente */
+    justify-content: center; /* Centraliza o conteúdo horizontalmente */
+    font-size: 16px; /* Ajuste do tamanho da fonte */
+    background-color: #f5f5f5; /* Cor de fundo dos botões */
+    border: 1px solid #ccc; /* Borda do botão */
+    border-radius: 5px; /* Bordas arredondadas */
+    box-sizing: border-box; /* Inclui padding e borda no tamanho total do botão */   
+}
+
+button:hover {
+    background-color: #ddd;
+    cursor: pointer;
+}
