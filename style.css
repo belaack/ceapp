@@ -19,7 +19,7 @@ body {
 /* Estilo do logo */
 .logo {
     width: 120px; /* Ajuste do tamanho do logo */
-    margin-bottom: 0,09px;
+    margin-bottom: 0.09px; /* Corrigido para ponto */
 }
 
 .titulo {
@@ -31,16 +31,16 @@ body {
     font-weight: 450;
     line-height: normal;
     padding-bottom: 65px;
-    padding-top: 0,1px;
+    padding-top: 0.1px; /* Corrigido para ponto */
 }
 
 /* Estilo dos itens do menu */
 .menu-item {
     width: 118px;
-    height: 6px;       
+    height: auto; /* Ajuste para auto */
     margin: 10px 0;
     text-align: center;
-    font-size: 13,4px; /* Ajuste do tamanho do texto */
+    font-size: 13.4px; /* Corrigido para ponto */
     border-radius: 3px;
     background: #D9D9D9;
     display: flex;
@@ -60,7 +60,6 @@ body {
 }
 
 /* Estilos dos botões */
-/* Estilizando os botões de submenu */
 button {
     width: 150px; /* Largura desejada do botão */
     height: auto; /* Altura automática para ajustar ao conteúdo */
@@ -80,4 +79,18 @@ button {
 button:hover {
     background-color: #ddd;
     cursor: pointer;
+}
+
+/* Correção para o estilo do placeholder */
+input::placeholder {
+    color: gray; /* Use ::placeholder em vez de :state(ms-input-placeholder) */
+}
+
+/* Personalize o tamanho do chatbot */
+#chatContainer {
+    display: none; /* Começa oculto */
+    position: fixed; /* Para posicionamento fixo na tela */
+    bottom: 20px; /* Distância do fundo */
+    right: 20px; /* Distância da direita */
+    z-index: 1000; /* Para que fique acima de outros elementos */
 }
