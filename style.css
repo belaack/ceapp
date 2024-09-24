@@ -93,4 +93,6 @@ input::placeholder {
     bottom: 20px; /* Distância do fundo */
     right: 20px; /* Distância da direita */
     z-index: 1000; /* Para que fique acima de outros elementos */
+    width: 350px;
+    height: 430px;
 }
